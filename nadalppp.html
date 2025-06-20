@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رفع التطبيقات</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="upload.html">رفع التطبيقات</a></li>
+                <li><a href="apps.html">التطبيقات</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>رفع تطبيق جديد</h1>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <label for="app-name">اسم التطبيق:</label>
+            <input type="text" id="app-name" name="app-name" required><br><br>
+            <label for="file">اختر الملف:</label>
+            <input type="file" id="file" name="file" required><br><br>
+            <label for="description">وصف التطبيق:</label>
+            <textarea id="description" name="description" required></textarea><br><br>
+            <button type="submit">رفع التطبيق</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+</html>
